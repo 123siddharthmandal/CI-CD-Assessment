@@ -27,7 +27,7 @@ jobs:
       run: docker build -t siddharthmandal6221/ci-cd .
 
     - name: Docker Login
-      run: echo ${{ secrets.DOCKER_HUB_PASSWORD }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} --password-stdin
+      run: echo ${{ secrets.DOCKER_HUB_PASSWORD_NEW }} | docker login -u ${{ secrets.DOCKER_HUB_USERNAME_NEW }} --password-stdin
 
 
     - name: Login Successful
